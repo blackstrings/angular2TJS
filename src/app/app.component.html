@@ -1,3 +1,34 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+
+			<div class="well">
+				<app-nav-bar></app-nav-bar>
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-md-4"> 
+			
+			<div class="well well-md">
+				left panel
+			</div>
+		
+		</div>
+		<div class="col-md-8">
+			<div class="well">
+				<app-three-js></app-three-js>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12 pageContainer">
+			<router-outlet></router-outlet>
+		</div>
+	</div>
+	
+</div>

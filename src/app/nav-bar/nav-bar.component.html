@@ -1,0 +1,17 @@
+<div [(ngModel)]="model" ngbRadioGroup name="radioBasic">
+  <label class="btn btn-primary">
+    <input type="radio" [value]="1"> Left (pre-checked)
+  </label>
+  <label class="btn btn-primary">
+    <input type="radio" value="middle"> Middle
+  </label>
+  <label class="btn btn-primary">
+    <input type="radio" [value]="false"> Right
+  </label>
+</div>
+<ngb-pagination [collectionSize]="50" [(page)]="currentPage" size="lg"></ngb-pagination>
+
+<div>
+<a routerLink="/page1" routerLinkActive="active">Page1</a>
+    <a routerLink="/page2" routerLinkActive="active">Page2</a>
+</div>
